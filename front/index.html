@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css"> <!-- Enlazar archivo CSS -->
+
+</head>
+<body>
+    <div class="fondo">
+    <h1 class="titulo">Biblioteca</h1>
+    </div>
+    <div class="separador"></div>
+    <br>
+    <h2 class="centro">Detalles del Libro</h2>
+    <div id="detallesLibro"></div>
+    
+    <div class="centro">
+        <label for="titulo"><b>Título:</b></label>
+        <input type="text" id="titulo" name="titulo">
+        <br>
+        <br>
+        <label for="autor"><b>Autor:</b></label>
+        <input type="text" id="autor" name="autor">
+        <br>
+        <br>
+        <label for="editorial"><b>Editorial:</b></label>
+        <input type="text" id="editorial" name="editorial">
+        <br>
+        <br>
+        <label for="genero"><b>Género:</b></label>
+        <input type="text" id="genero" name="genero">
+        <br>
+        <br>
+        <label for="añoPubli"><b>Año de Publicación:</b></label>
+        <input type="text" id="añoPubli" name="año">
+        <br>
+        <br>
+        <label for="disponible"><b>Disponible:</b></label>
+        <input type="checkbox" id="disponible" name="disponible">
+        <br>
+        <br>
+        <button onclick="crearLibro()" class="botones">Añadir Libro</button>
+        <br>
+       
+    </div>
+    <div class="separador"></div>
+    <br>
+    <h2 class="centro">Listado de Libros disponibles</h2>
+    <ul id="listaLibros"></ul>
+    <div class="centro">
+    <button onclick="mostrarLibros()" class="botones">Mostrar libros</button>
+    <table id="tablaLibros" class="tabla">
+        <!-- Aquí se mostrarán los libros -->
+    </table>
+    
+    </div>
+    
+</body>
+</html>
